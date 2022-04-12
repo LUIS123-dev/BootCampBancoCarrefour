@@ -1,0 +1,32 @@
+/*Declarando um variavel, para isso vai declara-la
+dentro da raiz do documento (dentro do Root).*/
+/*assim vou definir as cores padrões do projeto,
+caso precise alterar, só precisar mudar em um único lugar
+ao invés de sair caçando em vários lugares(tmb uma boa prática)*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+
+/*Reset básico do css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*chamando as cores definidas atraves da var*/
+body{
+   background: var(--preta); 
+   font-family:'Times New Roman', Times, serif ;
+}
+
+/* Acessando as caixas*/
+header .container{
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: "Arial Black";
+}
