@@ -1,0 +1,29 @@
+body{
+    font: 20px Arial, sans-serif;
+}
+.navbar{
+    background-color: #298A08;
+}
+
+.quem-somos{
+    background-color: #8181f7;
+    color: white;
+}
+
+
+/* Margem externa superior
+padding-top cria um margem interna superior*/
+
+.margin{
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.parceiro{
+    background: color #4fd2e9; ;
+}
+
+.bg.footer{
+    background-color: black;
+    color: white;
+}
