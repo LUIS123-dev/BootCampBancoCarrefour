@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style/main.css">
     <title>NETFILX CLONE</title>
 </head>
+
 <body>
     <!--Tag semântica-->
     <!--Cabeçalho-->
@@ -16,11 +18,41 @@
             <!--Navegação-->
             <nav>
                 <a href="">Inicio</a>
-                <a href="">Séries</a> <!--tecla para duplicar a linha alt+shift+seta para baixo-->
+                <a href="">Séries</a>
+                <!--tecla para duplicar a linha alt+shift+seta para baixo-->
                 <a href="">Filmes</a>
                 <a href="">Documentários</a>
             </nav>
         </div>
     </header>
+
+    <!--Menu (div com conceito semântico)-->
+    <!--Auxilia as ferramentos de SEO-->
+    <main>
+
+        <div class="filme-principal">
+
+            <div class="container">
+                <h3 class="titulo">HOUSE OF CARDS</h3>
+                <p class="descricao">Nada pode impedir o político sem escrúpluos Frank Underwood de conquistar
+                    Washington.</p>
+
+                <div class="botoes">
+                    <!--Role -> vai identificar qual a função do botão, caso ele não renderize do jeito certo-->
+                    <button role="button" class="botao">
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
 </body>
+
 </html>
