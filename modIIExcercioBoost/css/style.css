@@ -1,6 +1,7 @@
 body{
     font: 20px Arial, sans-serif;
 }
+
 .navbar{
     background-color: #298A08;
 }
@@ -9,7 +10,6 @@ body{
     background-color: #8181f7;
     color: white;
 }
-
 
 /* Margem externa superior
 padding-top cria um margem interna superior*/

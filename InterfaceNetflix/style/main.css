@@ -3,14 +3,14 @@ dentro da raiz do documento (dentro do Root).*/
 /*assim vou definir as cores padrões do projeto,
 caso precise alterar, só precisar mudar em um único lugar
 ao invés de sair caçando em vários lugares(tmb uma boa prática)*/
-:root{
-    --vermelho:#E50914;
-    --preta:#141414;
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
 }
 
 
 /*Reset básico do css*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,33 +20,33 @@ ao invés de sair caçando em vários lugares(tmb uma boa prática)*/
 /*chamando as cores definidas atraves da var*/
 /*Aqui foi colocado a fonte principal e o nome dá familia que pode substituir caso não tenha essa fonte"
 */
-body{
-   background: var(--preta); 
-   font-family:'Times New Roman', Times, serif ;
-   color: white;
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 /* Acessando as caixas*/
-header .container{
- /*acessando flex box, maneira de alinhar os elementos na tela*/ 
+header .container {
+    /*acessando flex box, maneira de alinhar os elementos na tela*/
     display: flex;
     /*flex-direction: row; -> por default já vem dentro de flex, não é obrigatorio declarar, só se for alterar*/
-   
+
     /*alinhando itens no centro*/
     align-items: center;
 
-    /*vai criar um espaço entre a primeira tag h2 e as segundas que estão dentro de NAV*/ 
+    /*vai criar um espaço entre a primeira tag h2 e as segundas que estão dentro de NAV*/
     justify-content: space-between;
 }
 
-header .logo{
+header .logo {
     margin-left: 5px;
     color: var(--vermelho);
     font-family: "Arial Black";
     font-size: 40px;
 }
 
-header nav a{
+header nav a {
     /*removendo o sublinhado*/
     text-decoration: none;
     color: #AAA;
@@ -55,17 +55,17 @@ header nav a{
 }
 
 /*add um evento, quando o mouse estiver sobre os elementos 'a' dentro da nav eles mudam de cor */
-header nav a:hover{
+header nav a:hover {
     color: #fff;
 }
 
 /*Filme Principal*/
-.filme-principal{
+.filme-principal {
     font-size: 16px;
 
     /*criando camada fume*/
     /*Referênciando uma imagem*/
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),url('../img/17239157.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/17239157.jpg');
 
     height: 500px;
 
@@ -78,6 +78,59 @@ header nav a:hover{
 
     /*começando sempre da esquerda*/
     align-items: flex-start;
+
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+.filme-principal .titulo {
+    /*Trabalhar com posicionamento fluido (percentual), pois ele faz o calculo automatico do posicionamento em tela.*/
+    margin-top: 15%;
+
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(49, 48, 47, 0.521);
+    border: none;
+    color: white;
+
+    /* espaço interno do elemento 1° para cima e para baixo - 2° para os lados */
+    padding: 15px 30px;
+
+    margin-right: 15px;
+    font-size: 12px;
+
+    /*muda a seta do mouse p/ a mãozinha*/
+    cursor: pointer;
+
+    /*cuida da parte de transição entre animações, como mudar a cor do botão */
+    transition: .3s ease all;
+}
+
+/*alterando a cor do botão e das letras ao passar o mouse sobre eles*/
+.botao:hover {
+    background-color: white;
+    color: var(--preta);
+}
+
+.botao i {
+    margin-right: 8px;
+
+}
+
+.container {
+    margin-left: 30px;
+}
+
+/*limitando o tamanho do container para as escritas não ultraspassarem o limitre desejado*/
+.filme-principal .container {
+    /*largura*/
+    width: 70%;
 
 
 }
